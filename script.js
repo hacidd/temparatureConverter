@@ -45,5 +45,10 @@ const convert = () => {
             result.textContent = 'Musisz podać jakąś wartość!'
         }
 }
+const reset = () => {
+    result.textContent = ''
+    converter.value = ''
+}
+resetBtn.addEventListener('click', reset)
 convBtn.addEventListener('click', convert)
 changeBtn.addEventListener('click', swap)
